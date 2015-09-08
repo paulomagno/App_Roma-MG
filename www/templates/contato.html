@@ -1,0 +1,37 @@
+<ion-view view-title="<img class='title-image' align='left' src='./img/logo-roma.png'>&nbsp;<h1 class=title>Fale-Conosco</h1>">
+  <ion-content>
+    <div class="list box">
+      <label class="item item-input">
+        <span class="input-label"><strong>Nome</strong></span>
+        <input type="text" ng-model="form.nome">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>E-mail</strong></span>
+        <input type="email" ng-model="form.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Telefone</strong></span>
+        <input type="tel" ng-model="form.telefone" mask='(99)9999-9999'>
+      </label>
+      <label class="item item-select">
+        <span class="input-label"><strong>Loja</strong></span>
+       <select ng-model="form.horario" class="close-left">
+         <option selected="selected" value="">SELECIONE</option>
+          <option value="GUTIERREZ">GUTIERREZ</option>
+          <option value="CIDADE NOVA">CIDADE NOVA</option>
+          <option value="DONA CLARA">DONA CLARA</option>
+          <option value="CONTAGEM">CONTAGEM</option>
+          <option value="VIA EXPRESSA DE CONTAGEM">VIA EXPRESSA DE CONTAGEM</option>
+          <option value="SEMI NOVOS SILVEIRA">SEMI NOVOS SILVEIRA</option>
+       </select>
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Mensagem</strong></span>
+        <textarea ng-model="form.mensagem"></textarea>
+      </label>
+    </div>
+    <button class="button button-full button-dark">
+        Enviar Mensagem
+    </button>
+ </ion-content>
+</ion-view>

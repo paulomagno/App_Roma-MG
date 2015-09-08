@@ -1,0 +1,18 @@
+<ion-view view-title="<img class='title-image' align='left' src='./img/logo-roma.png'>&nbsp;<h1 class=title>Lojas</h1>">
+	<ion-content>
+		<div class="card">
+			<div class="item  item-divider item-text-wrap">
+			  Selecione a loja desejada para entrar em contato ou visualizar sua localização.
+			</div>
+		</div>
+		<div class="list">
+			<a  ng-repeat="unidade in unidades" 
+				class="item item-icon-left" 
+				href="#/app/detalhesLoja/{{unidade.nome}}/{{unidade.latitude}}/{{unidade.longitude}}/{{unidade.telefone}}">
+			    <i class="icon ion-ios-location"></i>
+			     {{unidade.nome}}
+			    
+			</a>
+		</div>
+ 	</ion-content>
+</ion-view>

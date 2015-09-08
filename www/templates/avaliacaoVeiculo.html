@@ -1,0 +1,101 @@
+<ion-view view-title="<img class='title-image' align='left' src='./img/logo-roma.png'>&nbsp;Avaliação Veículo">
+  <ion-content>
+    <div class="list box">
+      <div class="item item-divider"><strong><div align="center">Dados Pessoais</div></strong></div>
+      <label class="item item-input">
+        <span class="input-label"><strong>Nome</strong></span>
+        <input type="text" ng-model="form.nome">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>E-mail</strong></span>
+        <input type="email" ng-model="form.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Telefone Completo</strong></span>
+        <input type="tel" ng-model="form.telefone" mask='(99)9999-9999'>
+      </label>
+       <label class="item item-input">
+        <span class="input-label"><strong>Celular</strong></span>
+        <input type="tel" ng-model="form.celular" mask='(99)99999-9999'>
+      </label>
+       <label class="item item-input">
+        <span class="input-label"><strong>Cidade</strong></span>
+        <input type="text" ng-model="form.cidade">
+      </label>
+      <label class="item item-select">
+        <span class="input-label"><strong>Estado</strong></span>
+       <select ng-model="form.estado">
+         <option value="">selecione</option>
+          <option value="">selecione o estado</option>
+           <option value="AC">Acre</option>
+           <option value="AL">Alagoas</option>
+           <option value="AP">Amapá</option>
+           <option value="AM">Amazonas</option>
+           <option value="BA">Bahia</option>
+           <option value="CE">Ceará</option>
+           <option value="DF">Distrito Federal</option>
+           <option value="ES">Espírito Santo</option>
+           <option value="GO">Goiás</option>
+           <option value="MA">Maranhão</option>
+           <option value="MT">Mato Grosso</option>
+           <option value="MS">Mato Grosso do Sul</option>
+           <option value="MG">Minas Gerais</option>
+           <option value="PA">Pará</option>
+           <option value="PB">Paraíba</option>
+           <option value="PR">Paraná</option>
+           <option value="PE">Pernambuco</option>
+           <option value="PI">Piauí</option>
+           <option value="RJ">Rio de Janeiro</option>
+           <option value="RN">Rio Grande do Norte</option>
+           <option value="RS">Rio Grande do Sul</option>
+           <option value="RO">Rondônia</option>
+           <option value="RR">Roraima</option>
+           <option value="SC">Santa Catarina</option>
+           <option value="SP">São Paulo</option>
+           <option value="SE">Sergipe</option>
+           <option value="TO">Tocantins</option>
+        </select>
+      </label>
+      <div class="item item-divider"><strong><div align="center">Dados Veículo</div></strong></div>
+      <label class="item item-input">
+        <span class="input-label"><strong>Marca</strong></span>
+        <input type="text" ng-model="form.marca">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Modelo</strong></span>
+        <input type="text" ng-model="form.modelo">
+      </label>
+       <label class="item item-input">
+        <span class="input-label"><strong>Ano Modelo</strong></span>
+        <input type="number" ng-model="form.anoModelo">
+      </label>
+      <label class="item item-select">
+        <span class="input-label"><strong>Blindado</strong></span>
+       <select ng-model="form.blindado">
+          <option selected="selected" value="">SELECIONE</option>
+          <option value="SIM">SIM</option>
+          <option value="NAO">NAO</option>
+       </select>
+      </label>
+      <label class="item item-select">
+        <span class="input-label"><strong>Loja</strong></span>
+       <select ng-model="form.loja">
+          <option selected="selected" value="">SELECIONE</option>
+          <option value="GUTIERREZ">GUTIERREZ</option>
+          <option value="CIDADE NOVA">CIDADE NOVA</option>
+          <option value="DONA CLARA">DONA CLARA</option>
+          <option value="CONTAGEM">CONTAGEM</option>
+          <option value="VIA EXPRESSA DE CONTAGEM">VIA EXPRESSA DE CONTAGEM</option>
+       </select>
+      </label>
+    </div>
+    <button class="button button-full button-dark">
+        Enviar Avaliação
+    </button>
+ </ion-content>
+<!--
+<div class="bar bar-footer bar-assertive">
+  <div class="title">&copy; Grupo Roma - 2015</div>
+</div>
+-->
+</ion-view>
