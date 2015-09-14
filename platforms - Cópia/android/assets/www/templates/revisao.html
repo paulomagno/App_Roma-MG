@@ -1,0 +1,103 @@
+<ion-view view-title="<img class='title-image' align='left' src='./img/logo-roma.png'>&nbsp;<h1 class=title>Revisão</h1>">
+  <ion-content>
+    <div class="list box">
+      <div class="item item-divider"><strong><div align="center">Dados Agendamento</div></strong></div>
+      <label class="item item-input">
+        <span class="input-label"><strong>Data</strong></span>
+        <input type="date" ng-model="form.data">
+      </label>
+      <label class="item item-select">
+        <span class="input-label"><strong>Horario</strong></span>
+       <select ng-model="form.horario">
+         <option value="">selecione</option>
+          <option value="08:00">08:00</option>
+          <option value="09:00">09:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+        </select>
+      </label>
+      <div class="item item-divider"><strong><div align="center">Dados Pessoais</div></strong></div>
+      <label class="item item-input">
+        <span class="input-label"><strong>Nome</strong></span>
+        <input type="text" ng-model="form.nome">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>E-mail</strong></span>
+        <input type="email" ng-model="form.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Telefone</strong></span>
+        <input type="tel" ng-model="form.telefone" mask='(99)9999-9999'>
+      </label>
+       <div class="item item-divider"><strong><div align="center">Dados Veículo</div></strong></div>
+      <label class="item item-select">
+        <span class="input-label"><strong>Modelo</strong></span>
+        <select ng-model="form.modelo">
+            <option selected="selected" value="">SELECIONE:</option>
+            <option value="GRAND SIENA">GRAND SIENA</option>
+            <option value="SIENA">SIENA</option>
+            <option value="NOVO LINEA">NOVO LINEA</option>
+            <option value="WEEKEND">WEEKEND</option>
+            <option value="IDEA">IDEA</option>
+            <option value="DOBLÒ">DOBLÒ</option>
+            <option value="FREEMONT">FREEMONT</option>
+            <option value="NOVO FIORINO">NOVO FIORINO</option>
+            <option value="DUCATO CARGO">DUCATO CARGO</option>
+            <option value="DUCATO MULTI">DUCATO MULTI</option>
+            <option value="UNO FURGÃO">UNO FURGÃO</option>
+            <option value="DOBLÒ CARGO">DOBLÒ CARGO</option>
+            <option value="DUCATO PASSAGEIRO">DUCATO PASSAGEIRO</option>
+            <option value="NOVA STRADA">NOVA STRADA</option>
+            <option value="NOVO UNO">NOVO UNO</option>
+            <option value="Uno">UNO</option>
+            <option value="Novo Palio Fire">NOVO PALIO FIRE</option>
+            <option value="Novo Palio">NOVO PALIO</option>
+            <option value="NOVO PUNTO">NOVO PUNTO</option>
+            <option value="500">500</option>
+            <option value="500 Abarth">500 ABARTH</option>
+            <option value="Novo Bravo">NOVO BRAVO</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Placa</strong></span>
+        <input type="text" ng-model="form.placa">
+      </label>
+       <label class="item item-input">
+        <span class="input-label"><strong>Km do carro</strong></span>
+        <input type="number" ng-model="form.km">
+      </label>
+      <div class="item item-divider"><strong><div align="center">Dados Complementares</div></strong></div>
+      <label class="item item-select">
+        <span class="input-label"><strong>Selecione uma loja</strong></span>
+       <select ng-model="form.horario">
+          <option selected="selected" value="">SELECIONE</option>
+          <option value="GUTIERREZ">GUTIERREZ</option>
+          <option value="CIDADE NOVA">CIDADE NOVA</option>
+          <option value="DONA CLARA">DONA CLARA</option>
+          <option value="CONTAGEM">CONTAGEM</option>
+       </select>
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Tipo Serviço</strong></span>
+        <input type="text" ng-model="form.tipoServico">
+      </label>
+      <label class="item item-input">
+        <span class="input-label"><strong>Mensagem</strong></span>
+        <textarea ng-model="form.mensagem"></textarea>
+      </label>
+    </div>
+    <button class="button button-full button-dark">
+        Agendar Revisão
+    </button>
+ </ion-content>
+<!--
+<div class="bar bar-footer bar-assertive">
+  <div class="title">&copy; Grupo Roma - 2015</div>
+</div>
+-->
+</ion-view>

@@ -1,0 +1,52 @@
+<!-- Menu da aplicação -->
+<ion-side-menus enable-menu-with-back-views="false">
+  
+  <ion-side-menu-content>
+    <!--<ion-nav-bar class="bar-assertive">-->
+    <ion-nav-bar class="bar-dark">
+    
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!--<ion-header-bar class="bar-assertive">-->
+    <ion-header-bar class="bar-dark">
+      <h1 class="title"><img class='title-image' align='left' src='./img/logo-roma.png'></h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        
+        <ion-item menu-close nav-transition="ios" href="#/app/dadosPessoais">
+          <i class="icon ion-person">&nbsp;</i> <strong>Dados Pessoais</strong>
+        </ion-item>
+        <ion-item menu-close nav-transition="ios" href="#/app/revisao">
+          <i class="icon ion-ios-calendar-outline">&nbsp;</i> <strong>Agendar Revisão</strong>
+        </ion-item>
+        <ion-item menu-close nav-transition="ios" href="#/app/pecas">
+         <i class="icon ion-wrench">&nbsp;</i> <strong>Cotação de Peças</strong>
+        </ion-item>
+        <ion-item menu-close nav-transition="ios" href="#/app/avaliacaoVeiculo">
+         <i class="icon ion-social-usd"></i> <i class="icon ion-model-s"></i> &nbsp; <strong>Avalie seu Veículo</strong>
+        </ion-item>
+        <ion-item menu-close nav-transition="ios" href="#/app/contato" >
+         <i class="icon ion-email">&nbsp;</i> <strong>Fale Conosco</strong>
+        </ion-item>
+        <ion-item menu-close nav-transition="ios" href="#/app/lojas">
+         <i class="icon ion-location">&nbsp;</i> <strong>Nossas Lojas</strong>
+        </ion-item>
+         <ion-item menu-close nav-transition="ios" href="#/app/redesSociais">
+         <i class="ion-social-facebook"></i> <i class="ion-social-twitter"></i> <i class="ion-social-instagram"></i>&nbsp;
+         <strong>Redes Sociais</strong>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
